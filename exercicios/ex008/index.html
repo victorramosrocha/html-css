@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br"> <!--Para informar que meu site é predominantemente em português-->
+    <head>
+        <meta charset="UTF-8"> <!--Que é uma linguagem de máquina binária que aceita acentos e etc..-->
+        <meta name="viewport" content="width=device-width, , initial-scale=1.0"> <!--O viewport abre o site em 100% na tela de visualização-->
+        <title>Formatação de Textos</title>
+        <link rel="stylesheet" href="style.css">
+        <style>
+            mark {
+                background-color: aquamarine;
+            }
+        </style>
+
+    </head>
+    <body>
+        <h1>Essas são algumas das principais fomatações de textos</h1>
+
+        <h2>Negrito / Destaque</h2>
+
+        <p>Nesta frase temos um <b>termo em Negrito</b> usando a tag &lt;b&gt; de "Bold" (tag não semântica, "apenas forma, sem sentido").
+        <p>Nesta outra frase temos um <strong>termo em Destaque</strong> usando a tag &lt;strong&gt; de "Destaque" (tag semântica "com sentido").</p> 
+        <p>O <b>Bold</b> me diz que o termo está em <b>Negrito</b>, já o <strong>strong</strong> me diz que está em <strong>Destaque</strong>.</p>
+        
+        <h2><i>Itálico</i> / <em>Ênfase</em></h2>
+
+        <p>O mesmo ocorre com o <i>termo em itálico</i> usando a tag &lt;i&gt; (tag não semântica).</p>
+        <p>Ainda podemos usar o <em>termo em itálico</em> com a tag &lt;em&gt; (tag semântica).</p>
+        <br>
+        <p>A tags de <strong>formas</strong> estão sendo substituidas por tags <strong>semânticas</strong> no <abbr title="HyperText Markup Language">html</abbr>, ou seja, tags com sentido.</p>
+        
+        <h2>Texto Marcado</h2>
+
+        <p>Criamos um <mark>texto marcado</mark> usando a tag &lt;mark&gt;.</p>
+        <p>Podemos usar a tag &lt;mark style="background-color: 'Nome ou código da cor'"&gt; para definir a cor de um <mark style="background-color: antiquewhite;">marca texto pontual.</mark></p>
+        <p>Mas podemos usar também a tag &lt;style&gt; dentro do head para definir a cor de <mark>todos os marca textos.</mark></p>
+        <p>Essa tag &lt;style&gt; não é <mark>HTML</mark>, já passa a ser <mark>CSS</mark>.</p>
+
+        <h2><big>Texto grande</big> / <small>Texto pequeno</small></h2>
+        <p>Criando um <big>texto grande</big> e um <small>texto pequeno</small> usando as tags &lt;big&gt; e &lt;small&gt;.</p>
+        <p>A tag &lt;big&gt; está obsoleta enquanto a &lt;small&gt; continua sendo utilizada.</p>
+
+        <h2>Texto deletado</h2>
+
+        <p>Um texto que pode ser lido, <del>mas deve ser desconsiderado</del> pode usar a tag &lt;del&gt;.</p>
+        
+        <h2>Texto inserido</h2>
+
+        <p>Já um <ins>texto inserido</ins> ou <u>sublinhado</u> deve usar a tag &lt;ins&gt; que substitui a tag &lt;u&gt; que ficou obsoleta.</p>
+
+        <h2>Texto sobrescrito</h2>
+
+        <p>Para escrever o termo 'X<sup>20</sup> + 3' por exemplo, escrevemos o 20 entre a tag &lt;sup&gt; para elevar apenas o texto 20.</p>
+
+        <h2>Texto subscrito</h2>
+
+        <p>Para o termo 'H<sub>2</sub>O', escrevemos o 2 entre a tag &lt;sub&gt;.</p>
+
+    </body>
+
+</html>

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grounping Tags</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: dimgray;
+        }
+        header{
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+        }
+        nav{
+            background-color: rgb(73, 73, 73);
+            box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.336);
+        }
+        nav > a{
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+        }
+        nav > a:hover{
+            text-decoration: underline;
+            color: red;
+        }
+        main{
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 10px 0px;
+        }
+        article{
+            background-color: lightgray;
+        }
+        article > aside{
+            background-color: rgb(165, 165, 165);
+        }
+        footer{
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 1px;
+            margin: 0px;
+        }
+        footer > p{
+            margin: 0;
+        }
+        div#bola{
+            border-radius: 50px;
+            width: 100px;
+            height: 100px;
+            background-color: white;
+            margin: 10px auto;
+        }
+        p{
+            text-indent: 20px;
+            padding-inline: 10px;
+            text-align: justify;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu site</h1>
+        <nav>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+        </nav>
+    </header>
+    <main>
+        <section id="assuntos">
+
+        </section>
+        <section id="noticias">
+            <article>
+                <h2>Sombras</h2>
+                <p>As sombras já funcionam com uma shorthand.</p>
+                <h2>Pixels</h2>
+                <p>Em um parágrafo dentro de um &lt;footer&gt; por exemplo, quando coloco o <code>padding: 1px;</code> ele vai considerar o pixel mais o <code>outline</code> e então ficar com uma borda maior. Basta criar um footer com filiação p no css e colocar 0 de margin:</p>
+                <code>
+                    footer > p{<br>
+                        margin: 0;<br>
+                    }
+                </code>
+                <h2>Bodas</h2>
+                <p>As bordas arredondadas podem ser adicionadas com o <code>border-radius: 0px;</code> ou <code>border-radius: 0%;</code> e ainda com uma shorthand <code>border-radius: 0px 0px 0px 0px;</code></p>
+                <h2>Bordas personalizadas</h2>
+                <p></p>
+                <aside>
+                    <p>Escrito por Lorem Silva</p>
+                </aside>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>Desenvolvido por Rocha</p>
+    </footer>
+    <div id="bola"></div>
+</body>
+</html>

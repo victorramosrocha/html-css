@@ -1,0 +1,118 @@
+@charset "UTF-8";
+
+/* Estilo da página de anotações */
+
+:root {
+    --cor1: #FAD200;
+    --cor2: #FA00B7;
+    --cor3: #00F8F9;
+    --cor4: #37A5A5;
+    --cor5: #7A713D;
+    --cor6: #7A3D6A;
+
+    --width-max: 1200px; 
+    --width-min: 300px;
+    /*no :root {} vão as váriaveis da css*/
+}
+header {
+    background-image: linear-gradient(to bottom, var(--cor3), var(--cor4));
+    background-color: var(--cor5);
+    border-radius: 10px 10px 0px 0px;
+    box-shadow: 10px 55px 20px -8px;
+    margin: auto;
+    margin-bottom: -20px;
+    max-width: var(--width-max);
+    min-width: var(--width-min);
+    text-align: center;
+    padding: 0px;
+}
+header > h1 {
+    color: var(--cor6);
+    margin: 0;
+    padding: 20px 0px 0px 0px;
+}
+
+header > p {
+    color: var(--cor6);
+    margin: 0;
+    padding: 10px 0px 20px 0px;
+}
+
+nav {
+    background-color: var(--cor4);
+    box-shadow: 20px 30px 30px -8px;
+    margin: auto;
+    margin-bottom: -27px;
+    max-width: var(--width-max);
+    min-width: var(--width-min);
+}
+
+nav > ul > a {
+    color: var(--cor5);
+    font-weight: bold;
+    text-decoration: none;
+    
+}
+
+nav > ul > a:hover {
+    background-color: #7A713D;
+    border-radius: 5px 5px 0px 0px;
+    color: var(--cor6);
+    padding: 5px 5px 5px 5px;
+    text-decoration: underline;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-image: linear-gradient(to right, var(--cor5), var(--cor6));
+}
+
+main {
+    background-color: whitesmoke;
+    box-shadow: 10px 20px 20px -8px;
+    margin: auto;
+    margin-bottom: -20px;
+    max-width: var(--width-max);
+    min-width: var(--width-min);
+    padding: 0px 0px 10px 0px;
+}
+main > h1 {
+    background-color: var(--cor4);
+    color: var(--cor5);
+    text-align: center;
+    margin-bottom: -25px;
+    padding: 10px 0px 10px 0px;
+
+}
+
+main > h2 {
+    background-color: var(--cor4);
+    border-radius: 0px 0px 10px 10px;
+    color: var(--cor5);
+    padding: 10px 0px 10px 30px;
+}
+
+main > h3{
+    padding-left: 16px;
+    color: var(--cor5);
+    font: normal 1.3em 'Arial', 'sans-serif';
+}
+main > p {
+    text-indent: 30px;
+    text-align: justify;
+    padding: 0px 15px 0px 15px;
+}
+
+footer {
+    background-color: var(--cor4);
+    border-radius: 0px 0px 10px 10px;
+    box-shadow: 10px 10px 20px -8px;
+    margin: auto;
+    max-width: var(--width-max);
+    min-width: var(--width-min);
+    text-align: center;
+}
+
+footer > p {
+    padding: 5px 0px 5px 0px;
+}

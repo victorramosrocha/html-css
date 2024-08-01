@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bordas personalizadas</title>
+    <style>
+        h1{
+            border: 10px solid black;
+            padding: 10px;
+            border-image-source: url('imgbolas.png');
+            border-image-slice: 27;
+            border-image-repeat: repeat;
+        }
+    </style>
+</head>
+<body>
+    <h1>Teste de borda</h1>
+    <p>Para colocar bordas é simples. Basta criar uma imagem num edito como o gimp ou buscar da internet e utilizar o css da seguinte maneira, para criar uma borda em volta de um <code>&lt;h1&gt;</code> por exemplo:</p>
+        <code>
+            <pre>
+                h1{<br>
+                    border: 10px solid black;<br>
+                    padding: 10px;<br>
+                    border-image-source: url('imgbolas.png');<br>
+                    border-image-slice: 27;<br>
+                    border-image-repeat: repeat;<br>
+                }
+            </pre>
+        </code>
+        <p>ou ainda uma shorthand</p>
+        <code>
+            <pre>
+            h1{<br>
+                border: 10px solid black;<br>
+                padding: 10px;<br>
+                border-image: url('imgbolas.png') 27    repeat <br>
+            }
+            </pre>
+        </code>
+    <p>Não é muito agradável mas pode ser necessário. E lembrando ainda que nem todos os navegadores são compativeis com esse tipo de borda.</p>
+</body>
+</html>
