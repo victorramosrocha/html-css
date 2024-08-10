@@ -7,10 +7,13 @@
     <title>Document</title>
     <style>
         body {
-            background-color: black;
+            height: 100vh;
+            /*background-color: black;
             background-image: url('imagens/wallpaper002.jpg');
             background-position: center center;
             background-repeat: no-repeat;
+            background-attachment: fixed;*/
+            background: black url('imagens/wallpaper002.jpg') center center no-repeat fixed;
             background-size: cover;
         }
 
@@ -40,6 +43,38 @@
         <p>
             Ao invés de trabalhar com o <code>bacground-size: 1000px;</code> por exemplo, podemos utilizar também o <code>cover</code>, <code>contain</code> ou 100% de viewport. Tudo depende da proposta ou do que precisamos.
         </p>
+        <h2>
+            Background-attachment e Shorthand
+        </h2>
+        <p>
+            O <code>background-attachment</code> ou vinculo é utilizado para fixar a imagem de fundo para que ela não role junto com o texto e não haja repetições com quebras de imagens.
+        </p>
+        <h2>
+            Shorthand
+        </h2>
+        <p>
+            O <code>background</code> é um shorthand que permite combinar as propriedades (<code> color > image> position > repeat > [size] > attachment</code>) para reduzir tudo isso a uma unica linha. 
+        </p>
+        <p>
+            <code style="padding-inline: 15px;">
+                background-color: black;</code>
+            <code style="padding-inline: 15px;">
+                background-image: url('imagens/wallpaper002.jpg');</code>
+            <code style="padding-inline: 15px;">
+                background-position: center center;</code>
+            <code style="padding-inline: 15px;">
+                background-repeat: no-repeat;</code>
+            <code style="padding-inline: 15px;">
+                background-attachment: fixed;
+            </code>
+        </p>
+        <p>
+            Entretanto, o <em>size</em> ainda não está funcionando nessa shorthand, sendo necessário assim coloca-lo separado.
+        </p>
+        <p>
+            <code style="padding-inline: 15px;">background-size: cover;</code>
+        </p>
+
     </main>
 </body>
 </html>
