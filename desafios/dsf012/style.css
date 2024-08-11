@@ -19,10 +19,13 @@ header {
 header > h1 {
     padding-top: 50px;
     font-variant: small-caps; /*Trnasforma as letras em maiusculo, deixando em destaque as letras iniciais*/
+
+    font-size: 10vw;
 }
 
 header > p {
     padding-bottom: 50px;
+    
 }
 
 header a, footer a {
@@ -35,17 +38,21 @@ header a:hover, footer a:hover{
     text-decoration: underline;
 }
 
-section.normal {
-    background-color: white;
-    color: black;
-}
-
 section {
     padding-top: 10vh;
     padding-bottom: 10vh;
     line-height: 2em;
     padding-left: 30px;
+    
+    font-size: 3.5vw;
+
 } /*configuração global*/ 
+
+section.normal {
+    background-color: white;
+    color: black;
+}
+
 
 section.imagem {
     background-color: rgb(85, 85, 85);
@@ -56,6 +63,23 @@ section.imagem > p {
     background-color: rgba(0, 0, 0, 0.186);
     width: 500px;
 }
+
+section#img01 {
+    background-image: url(imagens/background001.jpg);
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+section#img02 {
+    background-image: url(imagens/background002.jpg);
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
 footer {
     background-color: black;
     color: white;
