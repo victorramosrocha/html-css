@@ -5,138 +5,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Centralizando caixas</title>
     <style>
-
-        body {
-            background-color: black;
-        }
-
-        header {
-            background-color: #333;
-            color: white;
-            text-align: center;
-            max-width: 800px;
-            min-width: 320px;
-            margin: auto;
-
-        }
-
-        main {
-            max-width: 800px;
-            min-width: 320px;
-            margin: auto;
-            border-radius: 10px;
-            background-color: aliceblue;
-
-        }
-
-        div.A {
-            position: relative;
-
-            max-width: 600px;
-            min-width: auto;
-            height: 300px;
-            background-color: aqua;
-            margin: auto;
-            border: 2px solid black;
-            border-radius: 10px;
-        }
-
-        div.B {
-            display: flex;
-            justify-content: center;
-
-            max-width: 600px;
-            min-width: auto;
-            height: 300px;
-            background-color: aquamarine;
-            margin: auto;
-            border: 2px solid black;
-            border-radius: 10px;
-
-        }
-
-        div.C {
+        .container {
             display: grid;
-
-            max-width: 600px;
-            min-width: auto;
-            height: 300px;
-            background-color: aquamarine;
-            margin: auto;
-            border: 2px solid black;
-            border-radius: 10px;
+            grid-template-columns: repeat(auto-fill, 200px);
+            justify-content: center;
+            grid-gap: 10px;
+            max-width: 1000px;
+            width: 90%;
+            height: auto;
+            margin: 20px auto;
         }
 
-        div#d1 {
-            position: absolute;
-
-            width: 50vh;
-            background-color: bisque;
-            border: 1px dashed red;
-            border-radius: 10px;
-            text-align: center;
-
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
+        .item {
+            width: 200px;
+            height: 200px;
+            background-image: linear-gradient(to bottom, blue, lightblue);
         }
-
-        div#d2 {
-            align-self: center;
-
-            width: 50vh;
-            background-color: bisque;
-            border: 1px dashed red;
-            border-radius: 10px;
-            text-align: center;
-        }
-
-        div#d3 {
-            align-self: center;
-            justify-self: center;
-
-            width: 50vh;
-            background-color: bisque;
-            border: 1px dashed red;
-            border-radius: 10px;
-            text-align: center;
-        }
-
-        h2 {
-            font: normal 200 1.2em sans-serif ;
-        }
-
+        
     </style>
 </head>
 <body>
-    <header>
-        <h1>
-            Três formas de centrlizar caixas
-        </h1>
-    </header>
-    <main>
-        <div  class="A">
-            <div id="d1">
-                <h2>
-                    Centralizando uma <code>&lt;div&gt;</code> com <code>position</code>
-                </h2>
-            </div>
-        </div>
-        <div class="B">
-            <div id="d2">
-                <h2>
-                    Centralizando uma <code>&lt;div&gt;</code> com <code>display flex</code>
-                </h2>
-            </div>
-        </div>
-        <div class="C">
-            <div id="d3">
-                <h2>
-                    Centralizando uma <code>&lt;div&gt;</code> com <code>grid</code>
-                </h2>
-            </div>
-        </div>
-    </main>
-    
+    <div class="container">
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+    </div>
 </body>
 </html>
