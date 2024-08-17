@@ -6,27 +6,39 @@
     <title>Tabelas</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: Arial, Helvetica, sans-serif;
 
         }
 
         table {
             border-collapse: collapse;
-            width: 400px;
+            width: 500px;
         }
 
-        thead {
+        thead, tfoot {
             background-color: gray;
-            color: aliceblue;
-        }
-
-        tfoot {
-            background-color: gray;
-            color: aliceblue;
+            color: white;
         }
 
         td, th {
             border: 1px solid black;
+            padding: 10px;
+        }
+
+        caption {
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
+            border: 1px solid black;
+        }
+
+        tbody > tr:nth-child(odd) {/* ou 2n-1 no lugar de odd (impar). "Caso o site já tenha um fundo branco não é necessário especifacar a cor"*/
+            background-color: white;
+        }
+
+        tbody > tr:nth-child(even) { /* ou 2n no lugar de even (par)*/
+            background-color: lightgray;
         }
 
         .num {
@@ -41,6 +53,7 @@
     <!--
         Anatomia de tabelas grandes
         TABLE
+            CAPTION = Legenda
             THEAD
                 TR, TD, TH
             TBODY
@@ -50,10 +63,13 @@
     -->
 
     <table>
+        <caption>
+            População das Unidades Federativas
+        </caption>
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 50px;">População</th>
             </tr>
         </thead>
         <tbody>
@@ -89,7 +105,7 @@
                 <td>Espírito Santo</td>
                 <td class="num">46 077,5</td>
             </tr>
-            <tr><tr>
+            <tr>
                 <td>Goiás</td>
                 <td class="num">340 086,7</td>
             </tr>
@@ -168,8 +184,8 @@
         </tbody>
         <tfoot>
             <tr>
-                <td>Total Habitantes</td>
-                <td class="num"><strong>0000</strong></td>
+                <th scope="row">Total Habitantes</th>
+                <td class="num"><strong>210.147.120</strong></td>
             </tr>
         </tfoot>
     </table>
