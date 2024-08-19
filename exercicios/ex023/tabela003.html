@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mesclando Tabelas</title>
+</head>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 300px;
+        }
+
+        td {
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+        .span {
+            background-color: antiquewhite;
+        }
+    </style>
+<body>
+    <h1>Mesclagem de tabelas</h1>
+    <table>
+        <tr>
+            <td>A1</td>
+            <td class="span" colspan="2">B1</td>
+            <!--Eliminei C1 para expandir a B1-->
+        </tr>
+        <tr>
+            <td class="span" rowspan="3">A2</td>
+            <td>B2</td>
+            <td class="span" rowspan="2">C2</td>
+        </tr>
+        <tr>
+            <!--Eliminei A3 para expandir A2-->
+            <td>B3</td>
+            <!--Eliminei C3 para expandir C2-->
+        </tr>
+        <tr>
+            <!--Eliminei A4 para expandir A2-->
+            <td class="span" colspan="2">B4</td>
+            <!--Eliminei C4 para expandir B4-->
+        </tr>
+    </table>
+</body>
+</html>
