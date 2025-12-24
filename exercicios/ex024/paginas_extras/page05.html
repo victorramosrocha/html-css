@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascripts</title>
+    <style>
+        a {
+            border: 1px solid gray;
+            padding: 10px;
+            border-radius: 10px;
+            background-color: aliceblue;
+            text-decoration: none;
+            color: black;
+        }
+        a:hover {
+            padding: 8px;
+            font-size: 1.1em;
+            background: green;
+            color: aliceblue;
+        }
+    </style>
+</head>
+<body>
+    <a href="#" onclick="clicou()">Clica aqui!</a>
+    <div id="saida"></div>
+
+    <script>
+        function clicou() {
+            s = document.getElementById('saida')
+            s.innerHTML += 'Hum, clicou hem!'
+            s.style.padding = '20px'
+            s.style.color = 'blue'
+            s.style.fontSize = '1.5em'
+        }
+    </script>
+</body>
+</html>

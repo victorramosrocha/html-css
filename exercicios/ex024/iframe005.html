@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascripts</title>
+    <style>
+        .atributo {
+            color: rgb(2, 127, 252);
+        }
+        .refAtributo {
+            color: coral;
+        }
+    </style>
+</head>
+<body>
+    <h1>Executando scripts em iframes</h1>
+
+    <p>
+        Permitir que sites de terceiros executem scripts dentro do seu site também é arriscado.
+    </p>
+
+    <iframe 
+        src="paginas_extras/page05.html" 
+        frameborder="0" 
+        referrerpolicy="no-referrer" 
+        sandbox="allow-scripts">
+    </iframe>
+
+    <p>
+        Caso seja realmente necessário permitir que um site confiável execute scripts dentro da sua página, isso pode ser feito utilizando o atributo 
+        <code><span class="atributo">sandbox=</span><span class="refAtributo">"allow-scripts"</span></code>.
+        Dessa forma, apenas a execução de scripts é liberada, enquanto todas as outras permissões continuam bloqueadas.
+    </p>
+
+    <p>
+        O mesmo pode ser feito com formulários e outros recursos, dependendo do nível de confiança da aplicação de terceiros.
+    </p>
+
+</body>
+</html>
