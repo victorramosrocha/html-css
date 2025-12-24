@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navegação no iframe</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        iframe {
+            min-width: 800px;
+            height: 800px;
+            display: block;
+            margin: auto;
+            border: 1px solid gray;
+            border-radius: 10px;
+            box-shadow: 2px 2px 7px 1px lightgray;
+        }
+        .atributo {
+            color: rgb(2, 127, 252);
+        }
+        .refAtributo {
+            color: coral;
+        }
+    </style>
+</head>
+<body>
+    <h1>Faça sua escolha</h1>
+    <p>
+        Outra possibilidade de uso do <em>iframe</em> é carregar conteúdo de outros sites ou conteúdo local diretamente dentro do <em>iframe</em>, em vez de abrir outra página ao clicar em um link.
+    </p>
+    <ul>
+        <li><a href="paginas_extras/page01.html" target="frame">Primeira página</a></li>
+        <li><a href="paginas_extras/page02.html" target="frame">Segunda página</a></li>
+        <li><a href="paginas_extras/page03.html" target="frame">Terceira página</a></li>
+    </ul>
+    <p>
+        Ao criar um link utilizando o elemento &lt;a&gt;, basta usar o atributo <code><span class="atributo">target=</span><span class="refAtributo">"nameReference"</span></code>, fazendo referência ao atributo <span class="atributo">name=</span><span class="refAtributo">"iframeName"</span> definido no <em>iframe</em>.
+    </p>
+    <iframe srcdoc="<h1>Escolha uma das opções acima</h1><p>Ao abrir a página principal onde está o iframe, ele pode aparecer inicialmente como um quadro em branco, sem conteúdo. Para alterar esse comportamento, pode-se utilizar o atributo <code>src='otherContent'</code> para carregar o conteúdo de outra página ou o atributo <code>srcdoc='defaultContent'</code> para definir um conteúdo padrão exibido diretamente no iframe.</p><img id='logoCEV' src='imagens/cursoemvideo.png'>" id="tela" name="frame">
+        <p>
+            Infelizmente seu navegador não é compatível com o iframe!
+        </p>
+    </iframe>
+    <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deleniti placeat deserunt suscipit unde distinctio beatae nesciunt quos asperiores repudiandae voluptates adipisci, repellendus fuga, dolorem tempore aperiam ut omnis aliquam at?
+    </p>
+    <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda nam cupiditate laboriosam voluptates natus, amet nihil sunt voluptate repudiandae eius fuga delectus laudantium et dolores. Illo eaque veniam aliquid minus.
+    </p>
+</body>
+</html>
