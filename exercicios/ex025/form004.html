@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Telfone e Email</title>
+</head>
+<body>
+    <h1>Formulário com E-mail e Telefone</h1>
+    <form action="" method="" autocomplete="on">
+        <fieldset>
+            <legend>Dados Pessoais</legend>
+            <p>
+                <label for="iemail">E-mail:</label>
+                <input type="email" name="email" id="iemail" size="40" autocomplete="email" required>
+            </p>
+            <p>
+                <label for="iphone">Telefone:</label>
+                <input type="tel" name="phone" id="iphone" size="38" autocomplete="tel" pattern="^\(\d{2}\)\d{4, 5}-\d{4}$" required>
+            </p>
+            <p>
+                <input type="submit" value="ENVIAR">
+                <input type="reset" value="LIMPAR">
+            </p>
+        </fieldset>
+    </form>
+</body>
+</html>
