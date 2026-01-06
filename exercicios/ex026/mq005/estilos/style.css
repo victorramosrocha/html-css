@@ -1,0 +1,86 @@
+@charset "UTF-8";
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body, html {
+    background-color: lightgray;
+}
+
+header {
+    background-color: gray;
+}
+
+header > h1 {
+    padding: 10px;
+    text-align: center;
+}
+
+menu {
+    display: block;
+}
+
+menu > ul {
+    list-style: none;
+}
+
+menu > ul > li > a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    text-align: center;
+    background-color: rgb(87, 87, 87);
+    color: white;
+    border-top: 2px solid gray;
+
+}
+
+menu > ul > li > a:hover {
+    background-color: gray;
+}
+
+main {
+    width: 90vw;
+    background-color: white;
+    margin: auto;
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+article > h2 {
+    padding-bottom: 20px;
+}
+
+article > p {
+    text-align: justify;
+    margin-bottom: 10px;
+    text-indent: 20px;
+}
+
+/* meu código */
+p#fonte {
+    font-size: 0.8em;
+    text-align: center;
+    color: darkgray;
+    margin-top: 50px;
+}
+
+p#fonte > a {
+    text-decoration: none;
+    color: darkgray;
+}
+
+p#fonte > a:hover {
+    color: darkblue;
+}
+
+@media screen and (min-width: 320px) and (max-width: 640px) {
+    iframe {
+        width: 90vw;
+        height: 67vw;
+    }
+}
