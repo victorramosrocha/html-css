@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Query</title>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <link rel="stylesheet" href="../estilos/style.css">
+</head>
+<body>
+    <header>
+        <h1>HTML5 & CSS3</h1>
+        <span id="burger" class="material-symbols-outlined" onclick="clickMenu()">menu</span>
+        <menu id="itens">
+            <ul>
+                <li><a href="../index.html">Aula 9</a></li>
+                <li><a href="aula10.html">Aula 10</a></li>
+                <li><a href="#">Aula 12</a></li>
+                <li><a href="#">Aula 13</a></li>
+                <li><a href="#">Aula 14</a></li>
+            </ul>
+        </menu>
+    </header>
+    <main>
+        <article>
+            <h2>Capítulo 25 Aula 11 - Criando menu hambúrguer</h2>
+            <p>
+                Na aula anteriro foi criado o menu. Nesta aula foi implementado um recurso para um menu interativo do tipo hamburguer que expande ao clicar no icone do menu.
+            </p>
+
+            <p>
+                Os icnoes para o seu site podem ser encontrados em sites como o <a id="p-links" href="https://fonts.google.com/icons" target="_blank">google icons</a>, por exemplo.
+            </p>
+
+            <h2>Como usar símbolos do Material Design</h2>
+
+            <p>
+                <strong>Usar na web:</strong> A fonte do Material Symbols é a maneira mais fácil de incorporar os Symbols em projetos da Web.
+                
+            </p>
+
+            <p>
+                Os ícones são empacotados em uma única fonte para que os desenvolvedores Web possam facilmente incorporar esses ícones com apenas algumas linhas de código.
+            </p>
+
+            <p>
+                Para isso basta incluir uma linha única no head: &lt;link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" /&gt;
+            </p>
+
+            <p>
+                Isso é basicamente mais um CSS implementado ao seu projeto, criado por um terceiro. No caso aqui, o Google.
+            </p>
+
+            <p>
+                Mas para colocar um icone especifico, é necessário usa o <code>&lt;span class="material-symbols-outlined"&gt;menu&lt;/span&gt;</code>. O 'menu' deve ser substituido pelo nome do icone desejado.
+            </p>
+
+            <p>
+                No google fonts, há também a opção de buscar apenas um pacote especifico ou baixar pacote para auto-hospedagem.
+            </p>
+
+            <h3>Montando o menu</h3>
+
+            <p>
+                Para montar o menu, após ter concluído a reestilização do menu, é preciso esconder o menu anterior via CSS. Na aula anterior o menu estava utilizando um <code>display: block;</code> na CSS que foi substituido por <code>display: none;</code>
+            </p>
+
+            <p>
+                Além disso é necessário utilizar JavaScript;
+            </p>
+
+            <p>
+                conteúdo... &#x1F680; <!-- <<< Código do foguetinho -->
+            </p>
+
+            <iframe width="780" height="438" src="https://www.youtube.com/embed/67W4NdxW1kw" title="Configurando o layout do projeto - @Curso em Vídeo HTML5 e CSS3" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+        </article>
+        <p id="fonte">FONTE | <a href="https://youtu.be/67W4NdxW1kw" target="_blank">https://youtu.be/67W4NdxW1kw</a>, Curso de HTML5 e CSS3, Curso em Vídeo, Prof. Gustavo Guanabara.</p>
+    </main>
+    <script src="../js/scripts.js"></script>
+</body>
+</html>
