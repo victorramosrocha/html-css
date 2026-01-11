@@ -81,6 +81,26 @@ article > p {
     text-indent: 20px;
 }
 
+/* Telas maiores sem manu burguer */
+@media screen and (min-width: 768px) {
+    #burger {
+        display: none;
+    }
+    
+    menu {
+        display: block;
+    }
+
+    menu > ul > li {
+        display: inline-block;
+    }
+
+    main {
+        width: 768px;
+    }
+}
+
+
 /* meu código */
 
 h3 {

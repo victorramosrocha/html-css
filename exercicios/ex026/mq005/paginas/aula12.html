@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Query</title>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <link rel="stylesheet" href="../estilos/style.css">
+</head>
+<body onresize="mudarTamanho()">
+    <header>
+        <h1>HTML5 & CSS3</h1>
+        <span id="burger" class="material-symbols-outlined" onclick="clickMenu()">menu</span>
+        <menu id="itens">
+            <ul>
+                <li><a href="../index.html">Aula 9</a></li>
+                <li><a href="aula10.html">Aula 10</a></li>
+                <li><a href="aula11.html">Aula 11</a></li>
+                <li><a href="#">Aula 13</a></li>
+                <li><a href="#">Aula 14</a></li>
+            </ul>
+        </menu>
+    </header>
+    <main>
+        <article>
+            <h2>Capítulo 25 Aula 12 – Media Queries para outros dispositivos</h2>
+            
+            <p>
+                Nesta aula, damos continuidade ao projeto do menu responsivo, agora focando na criação das versões para telas maiores, como tablets, notebooks, desktops e TVs. Depois de configurar o menu hambúrguer e garantir que tudo funcionasse corretamente em celulares, chegou o momento de adaptar o layout para dispositivos que possuem espaço suficiente para exibir todos os itens do menu lado a lado — sem a necessidade do botão de navegação.
+            </p>
+            <p>
+                O professor começa mostrando como identificar o ponto de quebra ideal (breakpoint) para definir quando o hambúrguer deve desaparecer e o menu completo deve aparecer. Com base na tabela de tamanhos estudada anteriormente, utilizamos o valor de 768px como referência para ativar a versão “grande” do layout. Em seguida, criamos um novo arquivo CSS dedicado às media queries, onde ficam concentradas as regras para telas maiores, separando visualmente as configurações mobile first das adaptações de dispositivos mais amplos.
+                Dentro desse novo CSS, implementamos ajustes fundamentais: esconder o ícone hambúrguer, exibir o menu permanentemente, organizar os itens em linha usando inline-block e configurar larguras, comportamentos e espaçamentos adequados para esse novo contexto. O professor também mostra como ajustar a largura fixa do container em telas enormes, evitando que o texto fique espalhado demais e garantindo uma leitura mais confortável.
+            </p>
+            <p>
+                Para completar, a aula introduz um ponto crucial: usar JavaScript para monitorar mudanças no tamanho da janela. Ao detectar redimensionamento, o script decide automaticamente qual versão do menu exibir, evitando problemas quando o usuário alterna entre janelas pequenas e grandes. Essa lógica fecha a experiência de forma elegante, assegurando que o layout se ajuste sem erros, independentemente de como a tela estiver sendo usada.
+            </p>
+            <p>
+                Para finalizar, o professor testa o projeto em diferentes dispositivos — inclusive no celular e em um tablet real — mostrando na prática como o mesmo site adapta seu conteúdo automaticamente a cada tipo de tela. Essa etapa reforça o poder das media features e encerra os estudos do Capítulo 25 com chave de ouro.
+                Com isso, concluímos mais um grande exercício prático de responsividade. No próximo capítulo, iniciaremos um projeto especial: a criação de uma tela de login moderna, adaptável a diversas mídias e combinando conhecimentos de formulários, CSS, responsividade e layout avançado. Prepare-se — o desafio é grande, mas o aprendizado é ainda maior! &#x1F680; <!-- <<< Código do foguetinho -->
+            </p>
+
+            <iframe width="780" height="438" src="https://www.youtube.com/embed/Zp3fnf99kTg" title="Menu responsivo com HTML5 e CSS3 - @Curso em Vídeo HTML5 e CSS3" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </article>
+        <p id="fonte">
+            <a href="https://www.cursoemvideo.com/curso/curso-html5-e-css3-modulo-4-de-5-40-horas/aulas/modulo-04-2/modulos/capitulo-25-aula-09-menu-responsivo-com-html5-e-css3/" target="_blank">FONTE: <a href="https://www.cursoemvideo.com/curso/curso-html5-e-css3-modulo-4-de-5-40-horas/aulas/modulo-04-2/modulos/capitulo-25-aula-09-menu-responsivo-com-html5-e-css3/">https://www.cursoemvideo.com/curso/curso-html5-e-css3-modulo-4-de-5-40-horas/aulas/modulo-04-2/modulos/capitulo-25-aula-09-menu-responsivo-com-html5-e-css3/</a> Curso de HTML5 e CSS3, Curso em Vídeo, Prof. Gustavo Guanabara.</p></a>
+        </p>
+    </main>
+    <script src="../js/scripts.js"></script>
+</body>
+</html>

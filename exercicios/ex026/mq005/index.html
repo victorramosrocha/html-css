@@ -7,15 +7,15 @@
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
     <link rel="stylesheet" href="estilos/style.css">
 </head>
-<body>
+<body onresize="mudarTamanho()">
     <header>
         <h1>HTML5 & CSS3</h1>
-        <span id="burger" class="material-symbols-outlined">menu</span>
-        <menu>
+        <span id="burger" class="material-symbols-outlined" onclick="clickMenu()">menu</span>
+        <menu id="itens">
             <ul>
                 <li><a href="paginas/aula10.html">Aula 10</a></li>
                 <li><a href="paginas/aula11.html">Aula 11</a></li>
-                <li><a href="#">Aula 12</a></li>
+                <li><a href="paginas/aula12.html">Aula 12</a></li>
                 <li><a href="#">Aula 13</a></li>
                 <li><a href="#">Aula 14</a></li>
             </ul>
@@ -50,5 +50,6 @@
             <a href="https://www.cursoemvideo.com/curso/curso-html5-e-css3-modulo-4-de-5-40-horas/aulas/modulo-04-2/modulos/capitulo-25-aula-09-menu-responsivo-com-html5-e-css3/" target="_blank">FONTE: <a href="https://www.cursoemvideo.com/curso/curso-html5-e-css3-modulo-4-de-5-40-horas/aulas/modulo-04-2/modulos/capitulo-25-aula-09-menu-responsivo-com-html5-e-css3/">https://www.cursoemvideo.com/curso/curso-html5-e-css3-modulo-4-de-5-40-horas/aulas/modulo-04-2/modulos/capitulo-25-aula-09-menu-responsivo-com-html5-e-css3/</a> Curso de HTML5 e CSS3, Curso em Vídeo, Prof. Gustavo Guanabara.</p></a>
         </p>
     </main>
+    <script src="js/scripts.js"></script>
 </body>
 </html>

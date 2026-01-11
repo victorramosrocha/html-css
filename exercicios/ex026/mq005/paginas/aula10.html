@@ -7,15 +7,15 @@
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
     <link rel="stylesheet" href="../estilos/style.css">
 </head>
-<body>
+<body onresize="mudarTamanho()">
     <header>
         <h1>HTML5 & CSS3</h1>
-        <span id="burger" class="material-symbols-outlined">menu</span>
-        <menu>
+        <span id="burger" class="material-symbols-outlined" onclick="clickMenu()">menu</span>
+        <menu id="itens">
             <ul>
-               <li><a href="../index.html">Aula 9</a></li>
+                <li><a href="../index.html">Aula 9</a></li>
                 <li><a href="aula11.html">Aula 11</a></li>
-                <li><a href="#">Aula 12</a></li>
+                <li><a href="aula12.html">Aula 12</a></li>
                 <li><a href="#">Aula 13</a></li>
                 <li><a href="#">Aula 14</a></li>
             </ul>
@@ -49,5 +49,6 @@
         </article>
         <p id="fonte">FONTE | <a href="https://youtu.be/67W4NdxW1kw" target="_blank">https://youtu.be/67W4NdxW1kw</a>, Curso de HTML5 e CSS3, Curso em Vídeo, Prof. Gustavo Guanabara.</p>
     </main>
+    <script src="../js/scripts.js"></script>
 </body>
 </html>
