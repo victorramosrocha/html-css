@@ -21,7 +21,7 @@
             </p>
             <div class="example-box" id="flex-basis-example">
                 <div class="example-items" id="box-1">Pouco texto!</div>
-                <div class="example-items" id="box-2">Aqui temos mais texto!</div>
+                <div class="example-items" id="box-2"><p id="random-text">Aqui temos mais texto!</p></div>
                 <div class="example-items" id="box-3">???</div>
             </div>
             <p class="figure-subtitle">
@@ -59,7 +59,7 @@
             </p>
             <div class="example-box" id="flex-basis-example-4">
                 <div class="example-items" id="box-10">Pouco texto!</div>
-                <div class="example-items" id="box-11"><p id="random-text">Aqui temos mais texto!</p></div>
+                <div class="example-items" id="box-11">Aqui temos mais texto!</div>
                 <div class="example-items" id="box-12">???</div>
             </div>
             <p class="figure-subtitle">Figura 4: container com 300px; caixa 1 - 170px, caixa 2 - 250px e caixa 3 - 100px.</p>
@@ -73,14 +73,19 @@
     <!-- SCRIPTS -->
     <script>
         let box1 = document.querySelector("#box-1")
-        let randomtext = document.querySelector("#box-11")
+        let randomtext = document.querySelector("#box-2")
+        let box3 = document.querySelector("#box-3")
 
         box1.addEventListener("click", ()=> {
-            alert("Clica aí não cara, pelo amor de Deus!");
+            alert("Clica aí não pai, pelo amor de Deus!");
         });
         
         randomtext.addEventListener("click",  ()=> {
-            randomtext.textContent = "Clicou, já era!";
+            randomtext.innerHTML = "<p>Clicou, agora já foi!</p>";
+        });
+
+        box3.addEventListener("click", () => {
+            box3.innerHTML = "<p>50.000</p>";
         });
     </script>
 </body>

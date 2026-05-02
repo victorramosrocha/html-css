@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SSB - Sistema de Saúde Bugado</title>
+    <style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+    </style>
+</head>
+<body>
+    <h1>SSB</h1>
+    <textarea name="sintoma" id="sintoma"></textarea>
+    <button id="btdiagnostico" style="margin: 30px;">Diagnóstico</button>
+    <div class="diagnostico"></div>
+
+    <script>
+        let btdiagnostico = document.querySelector("#btdiagnostico");
+        let divdiagnostico = document.querySelector(".diagnostico")
+        let textarea = document.querySelector("#sintoma")
+
+        btdiagnostico.addEventListener("click", () => {
+            // Verificamos o valor dentro da função de clique
+            if (textarea.value !== "") { 
+                divdiagnostico.innerHTML = "Sintoma já existe! Por favor, selecione outro usuário.";
+            } else {
+                divdiagnostico.innerHTML = "Por favor, digite algo antes de prosseguir.";
+            }
+        });
+    </script>
+</body>
+</html>
