@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <style>
+        div.container {
+            background-color: lightsalmon;
+            
+            display: flex;
+            flex-flow: row wrap;
+            align-items: stretch;
+
+            height: 400px;
+        }
+
+        div.item {
+            background-color: lightblue;
+            border: 1px solid black ;
+            text-align: center;
+            padding: 20px;
+            
+        }
+
+        /*div#a {
+            
+        }*/
+
+        div#b {
+            align-self: auto;
+        }
+
+        div#c {
+            align-self: flex-end;          
+        }
+
+        /*div#d {
+            
+        }*/
+
+        div#e {
+            align-self: center;
+        }
+
+        div#f {
+            align-self: flex-start;
+        }
+
+        div#g {
+            align-self: flex-end;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item" id="a">A</div>
+        <div class="item" id="b">B</div>
+        <div class="item" id="c">C</div>
+        <div class="item" id="d">D</div>
+        <div class="item" id="e">E</div>
+        <div class="item" id="f">F</div>
+        <div class="item" id="g">G</div>
+    </div>
+</body>
+</html>
