@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Align-Self</title>
     <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/align_self.css">
 </head>
 <body>
     <header>
@@ -12,10 +13,48 @@
         <p>Modulo 5 - Curso em Vídeo</p>
     </header>
     <main>
-        <p class="class-number">Aula 9</p>
-        <h2 class="class-title">Align-Self</h2>
+        <p class="class-number">Aula 7</p>
+        <h1 class="class-title">Alinhamento dos Itens Flexbox</h1>
         <section>
-            
+            <p>
+                A propriedade <em>align-self</em> é aplicada individualmente a cada item dentro de um container flex e controla o alinhamento no <em>cross-axis</em> (eixo transversal). Ela sobrescreve o valor definido pela propriedade <em>align-items</em> no elemento pai.
+                Os principais valores de <em>align-self</em> são:
+            </p>
+
+            <div class="text-box">
+                <div id="left-text">
+                    <p>align-self: auto;</p>
+                    <p>align-self: flex-start;</p>
+                    <p>align-self: flex-end;</p>
+                    <p>align-self: center;</p>
+                    <p>align-self: stretch;</p>
+                </div>
+
+                <div id="right-text">
+                    <p>herda o alinhamento definido pelo <em>align-items</em> do elemento pai.</p>
+                    <p>alinha o item no início do eixo transversal (<em>cross-start</em>).</p>
+                    <p>alinha o item no final do eixo transversal (<em>cross-end</em>).</p>
+                    <p>centraliza o item ao longo do eixo transversal.</p>
+                    <p>faz o item se estender para ocupar todo o espaço disponível no eixo transversal.</p>
+                </div>
+            </div>
+
+            <div class="example-box" id="align-self-example">
+                <div class="example-itens" id="box-1">Box 1</div>
+                <div class="example-itens" id="box-2">Box 2</div>
+                <div class="example-itens" id="box-3">Box 3</div>
+                <div class="example-itens" id="box-4">Box 4</div>
+                <div class="example-itens" id="box-5">Box 5</div>
+            </div>
+
+            <p class="figure-subtitle">
+                Figura 1: exemplos dos valores da propriedade align-self.
+            </p>
+
+            <p>
+                Na figura acima, cada caixa demonstra um valor diferente da propriedade <em>align-self</em>:
+                a caixa 1 utiliza <em>auto</em>, herdando o comportamento do elemento pai; a caixa 2 utiliza <em>flex-start</em>; a caixa 3, <em>flex-end</em>; a caixa 4, <em>center</em>; e a caixa 5, <em>stretch</em>, ocupando todo o espaço disponível no eixo transversal.
+            </p>
         </section>
     </main>
     <footer>
