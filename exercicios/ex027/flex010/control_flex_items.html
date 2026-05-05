@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Controle do tamanho de itens felxiveis</title>
+    <link rel="stylesheet" href="../css/base.css">
+    <style>
+        div.example-box {
+            display: flex;
+            flex-flow: row nowrap;
+
+            align-items: center;
+
+            background-color: #fff;
+            border: 3px solid yellow;
+            border-radius: 15px;
+            box-shadow: 2px 2px 5px 1px #999;
+
+
+            justify-content: space-evenly;
+            
+            height: 200px;
+            width: 600px;
+            margin: 0 auto;
+        }
+
+        div.example-items {
+            background-color: lightgoldenrodyellow;
+            border: 3px solid yellow;
+            border-radius: 15px;
+            box-shadow: 1px 1px 3px 1px #999;
+            padding: 30px;
+        }
+
+        div#box-1 {
+            flex-basis: 150px;
+            flex-grow: 0;
+            flex-shrink: 1;
+        }
+
+        div#box-1 {
+            flex-basis: 150px;
+            flex-grow: 2;
+            flex-shrink: 0;
+        }
+
+        div#box-1 {
+            flex-basis: 150px;
+            flex-grow: 1;
+            flex-shrink: 2;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>HTML5 e CSS3</h1>
+        <p>Modulo 5 - Curso em Vídeo</p>
+    </header>
+    <main>
+        <p class="class-number">Aula 9 - Capítulo 27</p>
+        <h1 class="class-title">Controle do Tamanho de Itens Flexíveis</h1>
+        <section>
+            <h2>flex-shrink - pode encolher?</h2>
+            <p>
+                Por padrão, o <em>flex-shrink</em> tem valor <em>1</em>, que em termos simples diz, "sim, pode encolher."
+            </p>
+        </section>
+        <section>
+            <h2>flex-grow - pode aumentar?</h2>
+            <p>
+                Diferente do flex-shrink, o <em>flex-grow</em> tem valor <em>0</em> por padrão e não pode aumentar.
+            </p>
+            <p>
+                Para criar elementos altamente fluidos, basta deixar o flex-shrink: 1; (pode encolher) e o flex-grow: 1; (pode aumentar). Isso permite que os itens dentro do container cresção e encolham de acordo com o seu tamanho. 
+            </p>
+        </section>
+        <div class="example-box" id="flex-basis-example">
+            <div class="example-items" id="box-1">
+                <p>
+                    f-basis:  150px <br>
+                    f-grow:   0 <br>
+                    f-shrink: 1
+                </p>
+            </div>
+            <div class="example-items" id="box-2">
+                <p>
+                    f-basis:  150px <br>
+                    f-grow:   2 <br>
+                    f-shrink: 0
+                </p>
+            </div>
+            <div class="example-items" id="box-3">
+                <p>
+                    f-basis:  150px <br>
+                    f-grow:   1 <br>
+                    f-shrink: 2
+                </p>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p id="author">by Victor Rocha &copy; 2026</p>
+        <p id="copyright">Todos os direitos reservados</p>
+    </footer>
+</body>
+</html>

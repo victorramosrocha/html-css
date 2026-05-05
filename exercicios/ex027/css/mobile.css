@@ -1,0 +1,20 @@
+@media screen and (max-width: 600px) {
+    body {
+        background-color: black;
+    }
+
+    header {
+        width: 100vw;
+    }
+
+    main > h1 {
+        line-height: 0;
+        background-color: antiquewhite;
+    }
+    
+    main {
+        width: 90vw;
+        margin: auto;
+    }
+    
+}
