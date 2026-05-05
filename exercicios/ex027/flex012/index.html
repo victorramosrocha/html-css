@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <style>
+        /*GUANABARA CLASS*/
+        div.container {
+            background-color: lightsalmon;
+            display: flex;
+            flex-flow: row nowrap;
+        }
+
+        div.item {
+            background-color: lightblue;
+            border: 1px solid black ;
+            text-align: center;
+        }
+
+        div#cx-a {
+            flex: 1 0 200px;
+        }
+
+        div#cx-b {
+            flex: 1 1 200px;
+        }
+
+        div#cx-c {
+            flex: 1 8 auto;
+        }
+
+        /*CLASS NOTES*/
+        div.class-title {
+            font: italic normal normal 1.5em/100px 'Times New Roman', serif;
+        }
+        section#class-notes {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        div.content-notes > p {
+            padding: 0 10%;
+        }
+        div.content-notes > pre {
+            padding: 0 10%;
+        }
+        div.content-notes > ul {
+            padding: 0 13%;
+        }
+        span.example-code {
+            background-color: #040450;
+            padding: 5px 15px;
+            border-radius: 5px;
+            color: aliceblue;
+        }
+        span.property {
+            color: paleturquoise;
+        }
+        span.property-value {
+            color: darkorchid;
+        }
+    </style>
+</head>
+<body>
+    <section class="class-content" id="guanabara-class">
+        <div class="container">
+            <div class="item" id="cx-a">A</div>
+            <div class="item" id="cx-b">B</div>
+            <div class="item" id="cx-c">C</div>
+        </div>
+    </section>
+    <div class="class-title" style="text-align: center;">
+        <hr>
+        <h1>Aula 10 - A Propriedade Flex</h1>
+        <hr>
+    </div>
+    <section class="class-content" id="class-notes">
+        <div class="container-notes">
+            <div class="content-notes">
+                <p id="lesson-summary">
+                    Nas aulas anteriores vimos as prorpiedades de flex: <em>flex-basis, flex-shrink, flex-grow</em>. Nesta aula seguiremos a recomendação da W3School, que aconselha utilizar a Propriedade <em>flex</em>.
+                </p>
+                <p>Sem utilizar diretamente flex</p>
+<pre>
+    <code>
+    flex-basis: 150px;
+    flex-grow: 0;
+    flex-shrink: 1;
+    </code>
+</pre>
+                <p>Utilizando somente o flex</p>
+                <pre>
+<code>
+    flex: 0 1 150px;
+</code>
+</pre>
+                <p>
+                    Então, temos flex como: <strong><code>flex: 'grow', 'shrink', 'basis'</code>;</strong>
+                </p>
+                <p>
+                    Mas, é possível simplificar ainda mais? Claro que sim, pequeno gafanhoto!
+                </p>
+                <ul>
+                    <li>
+                        <strong>flex: 0 1 auto;</strong> / <strong>flex: initial;</strong> - comportamento padrão dos itens flexíveis.
+                    </li>
+                    <li>
+                        <strong>flex: 0 0 auto;</strong> / <strong>flex: none;</strong> - não permite os itens aumentarem ou diminuirem.
+                    </li>
+                    <li>
+                        <strong>flex: 1 1 auto; </strong> / <strong>flex: auto;</strong>- é o máximo de flexibilidade de um item, limitado apenas por seu conteúdo.
+                    </li>
+                    <li>
+                        <strong>flex: 3;</strong> / <strong>flex: 3 1 auto;</strong> - quando usado um unico valor "flex: 'n';" apenas o <em>grow</em> é alterado. O <em>shrink</em> e <em>basis</em> permanecem padrão (shrink = 1 e basis = auto).
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

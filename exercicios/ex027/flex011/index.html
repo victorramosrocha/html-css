@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <style>
+        /*GUANABARA CLASS*/
+        div.container {
+            background-color: lightsalmon;
+            display: flex;
+            flex-flow: row nowrap;
+        }
+
+        div.item {
+            background-color: lightblue;
+            border: 1px solid black ;
+            text-align: center;
+
+            flex-basis: 300px;
+        }
+
+        div#cx-a {
+            flex-shrink: 0;
+            flex-grow: 1;
+            background-color: pink;
+        }
+
+        div#cx-b {
+            flex-shrink: 1;
+            flex-grow: 1;
+        }
+
+        div#cx-c {
+            flex-shrink: 8;
+            flex-grow: 1;
+        }
+
+        /*CLASS NOTES*/
+        div.class-title {
+            font: italic normal normal 1.5em/100px 'Times New Roman', serif;
+        }
+        section#class-notes {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        div.content-notes > p {
+            padding: 0 10%;
+        }
+        div.content-notes > pre {
+            padding: 0 10%;
+        }
+    </style>
+</head>
+<body>
+    <section class="class-content" id="guanabara-class">
+        <div class="container">
+            <div class="item" id="cx-a">A</div>
+            <div class="item" id="cx-b">B</div>
+            <div class="item" id="cx-c">C</div>
+        </div>
+    </section>
+    <div class="class-title" style="text-align: center;">
+        <hr>
+        <h1>Aula 9 - </h1>
+        <hr>
+    </div>
+    <section class="class-content" id="class-notes">
+        <div class="container-notes">
+            <div class="content-notes">
+                <p>
+                    <strong>Resumo de Propriedades dos Itens</strong> <br>
+                    flex-basis: Define o tamanho inicial do item antes do espaço restante ser distribuído. É como um "largura base". <br>
+
+                    flex-grow: Define a capacidade de um item crescer se houver espaço sobrando. <br>
+
+                    0: Não cresce (padrão). <br>
+
+                    n: Cresce proporcionalmente ao valor informado. <br>
+
+                    flex-shrink: Define a capacidade de um item encolher se o espaço for insuficiente. <br>
+
+                    0: Não encolhe (pode gerar barra de rolagem/overflow). <br>
+
+                    1: Encolhe proporcionalmente (padrão).
+                </p>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
